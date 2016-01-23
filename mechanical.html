@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mechanical</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    
+    <!-- for accordian -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+
+        <!-- Load Resume  -->
+    <script type="text/javascript" src="pdfobject.js"></script>
+    <script type="text/javascript">
+      window.onload = function (){
+        var success = new PDFObject({ url: "img/MSreport.pdf" }).embed();
+      };
+    </script>
+
+
+
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html#projects">HOME</a>        <!--  CHANGE THIS LINK -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+<!--             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+<div class="bg-projects" id="m">
+<!-- <div class="container"> -->
+  <h2>MECHANICAL PROJECTS</h2>
+<!--   <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Senior Design: In Vivo Disturbance Simulator for Surgical Robots</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">  <!-- add in here for active -->
+        <div class="panel-body">
+             <div class="row">
+                <div class="col-lg-6 col-md-6 " >
+                <h3> Overview </h3>
+                    <p>
+                         Researchers at the Advanced Medical Technologies Laboratory (AMTL) at the University of Colorado Boulder are working to develop a robotic capsule device to replace the colonoscope used in colonoscopies today. A full-scale model of the environment and potential environmental disturbances will allow for testing of the robot's control. It is desired to produce viscoelastic haustral folds of the interior of the colon, as well as simulate disturbances caused by patient breathing, shifting, and peristaltic motions. Our disturbance simulator design is shown to the right. The colon (not shown in the figure) will be attatched to the top plates of this system.                          
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 " >
+                    <img src="img/mechanical/Full4.JPG" class="img-responsive" alt="" height="350" width="350" vspace="20">
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 " style = "border-top: 1px solid #ccc;">
+                    <h3> Locking Pin System </h3>
+                    <p>
+                        In order to mimic axial rotation along the body full rotation of the colon is implemented using a wheel locking system. The diagram below shows the setup of this system. 
+                        The most left steel disk will be fixed to the base structure allowing the second steel disk and wheel to be free moving. A steel rod (on left) goes through the bushing attached to the legs of the table and then keys into the second steel disk. This steel disk will connect to a large wheel. The steel disk will also have a milled section to house a pull pin locking system. For use the pull pin must be pulled out of the hole to enable rotation. The user is then able to rotate the system using the wheel. Once a desired angle is reached, the pull pin is allowed to return to the nearest hole. The system will be held together by a final female key component (far right). This final aluminum part will screw onto the rod, holding the system together axially. Overall it will simulate the patient lying on one side and completely rolling over to their other side. 
+                        <img src="img/mechanical/WheelLockingSystem.JPG" class="img-responsive" alt="" height="375" width="400" vspace="20">
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 " style = "border-top: 1px solid #ccc;">
+                <h3> Clapper Actuation</h3>
+                <p>
+                    In addition to the entire 90-degree rotation of the base plate more precise actuation of the end of the plate is desired to help represent crunching motion of the colon. The clapper design (shown below) consists of a stepper motor attached to a hinge. This is then mounted on a rail that gives the structure two degrees of freedom and allows the axis of rotation to be moved from the center of the plate to the edge.
+                    <img src="img/mechanical/ClapperClose.JPG" class="img-responsive" alt="" height="250" width="250" vspace="20">
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 " style = "border-top: 1px solid #ccc;">
+                <h3> Translation Stages</h3>
+                    <p>
+                        A fully automated controlled device is desired for the base of the simulator to instill disturbances on the synthetic colon. These disturbances include motion due to patient shifting, compression due to breathing, and stretching due to peristalsis. The disturbances must be able to be varied in length and amplitude to create an environment that could simulate many different scenarios. This is achieved by including motor driven X, Y and Z tranlations at different points of the colon. 
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 " style = "border-top: 1px solid #ccc;">
+                    <img src="img/mechanical/FullExplode1.JPG" class="img-responsive" alt="" height="350" width="350" vspace="20">
+
+                </div>
+            </div>
+        
+
+        <div class="row">
+                <div class="col-lg-6 col-md-6 " >
+                <h4>X and Y Translation:</h4>
+                    <p>
+                        For simplicity, the same actuation design was used for all X, Y and Z translations. The design (shown below) of the X or Y translation stage uses a lead screw in correlation with parallel guide rails consisting of bearings and rods. 
+                        A lead screw stepper motor is mounted horizontally onto the top base plate housing parallel steel guide rails. The guide rails contain linear bearings used to guide the colon plate. Finally, a manufactured part is fastened onto the lead screw nut which attaches to the colon plate. This assembly allows for smooth motion in the X and Y directions in order to instill stretching and compressing motions on the colon.
+                        <img src="img/mechanical/xy.png" class="img-responsive" alt="" height="400" width="450" vspace="20">
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 " >
+                <h4>Z Translation:</h4>
+                <p>
+                    To achieve Z translation the X/Y design is rotated and mounted underneath the top base plate via steel support rods. The support rods act as guide rails for flanged linear bearings. An aluminum plate is attached to an aluminum sheath along the length of the lead screw and is mounted above the linear bearings. Connection of this plate to the steel supports ensures only linear motion and eliminates roational motion. In addition it attaches to the lead screw nut allowing for the motion to be created. This design specifically allows for another degree of freedom of patient shifting, focusing more on mimicing patient breathing.
+                    <img src="img/mechanical/zstage.png" class="img-responsive" alt="" height="200" width="250" vspace="20">
+                </p>
+                </div>
+            </div>
+        
+       <div class="row">
+                <div class="col-lg-4 col-md-6 " style = "border-top: 1px solid #ccc;">
+                <h3>Mold Core </h3>
+                    <p>
+                        
+                        To meet the requirement of casting an anatomically accurate colon differentiated haustral folds need to be represented. This is acheived by 3D printing an inner mold core (shown below) of a rounded ball and cup system.  This design is modular so each piece fits onto one another and can be beaded together with a wire with the hole shown going through the middle of the core. This allows the system to be easily positioned into the desired shape of the colon to mold the full length of the colon in a single pour.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center " style = "border-top: 1px solid #ccc; padding-top:40px; padding-left:80px; ">
+
+                    <img src="img/mechanical/LargeMoldAssembled.JPG" class="img-responsive" alt="" height="250" width="250" vspace="20">
+
+                   
+                </div>
+                <div class="col-lg-4 col-md-6 text-center " style = "border-top: 1px solid #ccc; padding-top:50px; ">
+
+                    <img src="img/mechanical/LargeMoldCut.JPG" class="img-responsive" alt="" height="250" width="250" vspace="20">
+
+                </div>
+            </div>
+        
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Component Design: Drill Powered Bike</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 " style = "border-bottom: 1px solid #ccc;">
+                <h3> Overview </h3>
+                    <p style="padding-bottom: 24px">
+                    It was assigned to construct a drill powered bike with the requirement of the bike having at least 3 wheels. Our design consisted of maintaining an existing bike structure while attaching a bike trailer to the end for the third wheel requirement. Our design focussed on simplicity and funcitonality.
+                    </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 " style = "border-bottom: 1px solid #ccc;">
+                    <img src="img/mechanical/bikeFull.jpg" class="img-responsive" alt="" height="272" width="272" vspace="20">
+                    </div>
+                    <div class="col-lg-4 col-md-6 " style = "border-bottom: 1px solid #ccc;">
+                    <img src="img/mechanical/bikke.png" class="img-responsive" alt="" height="288" width="288" vspace="20">
+                    </div>
+                    
+                
+                <div class="col-lg-6 col-md-6 " style = "border-right: 1px solid #ccc;"> 
+                <p style="padding-top:20px">
+                     The bike was powered by attaching a drill above the back tire. This allowed for close access to the bike gears and kept the drill out of the way of the rider. This placement also allowed for the bike chain to be tensioned by the position of the bike seat.
+             <img src="img/mechanical/bikeBack.jpg" class="img-responsive" alt="" height="300" width="300" vspace="20">
+             </p>
+                </div>
+                <div class="col-lg-6 col-md-6 ">
+                    <div class="service-box">
+                    <p>
+                    An aluminum rod was inserted into the drill to act as the drive shaft. This aluminum rod was put through two vibration damping bearings to reduce dampening while in use. The drive shaft also had a bearing sprocket where the connection the the chain came allowing for the drill to turn the chain and therefore power the bike. As well, set screw shaft collars were used to keep the sproket in place.
+                    <img src="img/mechanical/bikecad2.png" class="img-responsive" alt="" height="300" width="300" vspace="20">
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Measurements Lab: Headphone Amplitude Response</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+        <div class="container">
+            <div class="row">
+             <h3> Overview </h3>
+             <p>
+            Headphones aren’t designed for accuracy as much as they are designed so that layers of tones sound nice to the end user. By measuring the amplitude response of headphones  conclusions can be made to determine if there is a correlation between frequency input and amplitude response  for different headphone models. It is expected for the amplitude to peak at different frequency tones. It is to be determined if there is a correlation between the model of headphone and the amplitude at which it peaks.
+
+            </p>
+                <div class="col-lg-4 col-md-6 " style = "border-top: 1px solid #ccc;">
+                <h3> The System</h3>
+                    <p>
+                    The system consists of putting a microphone against the output sound of different pairs of headphones (shown below). The signal from the microphone is then input into a non-inverting amplifier circuit. This was to ensure a quality signal was recorded. This signal was then read via an oscilloscope.  
+                    The setup of the circuit (shown on right) contains an audio jack for the microphone input and a potentiometer to vary the gain of the signal. The physical circuit built and used can be seen on the far right.
+                    
+                    <img src="img/mechanical/mic2.jpg" class="img-responsive" alt="" height="200" width="200" vspace="20">
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6" style = "border-top: 1px solid #ccc; padding-top:50px;">
+                    
+                     <p>
+                     <img src="img/mechanical/circuit.png" class="img-responsive" alt="" height="450" width="450" vspace="20">
+                     
+                     </p>
+                </div>
+                <div class="col-lg-4 col-md-6 " style = "border-top: 1px solid #ccc; padding-top:50px;">
+                <p>
+                    <img src="img/mechanical/circuit2.jpg" class="img-responsive" alt="" height="300" width="300" vspace="20">
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                   <div class="col-lg-6 col-md-6" style = "border-top: 1px solid #ccc;">
+                   <h3>Acquiring the Signal</h3>
+                     <p>
+                        Frequencies to be output on the headphones were generated in MATLAB ranging from 70-10000 Hz.
+                     <img src="img/mechanical/matlab.PNG" class="img-responsive" alt="" height="250" width="250" vspace="20">
+                     </p>
+                    </div>
+                <div class="col-lg-6 col-md-6 " style = "border-top: 1px solid #ccc; padding-top:50px;">
+                    <p>
+                      LabView was used to record the voltage signal and convert it from voltage to amplitude using a a Fast Fourier Transform.
+                     <img src="img/mechanical/labview.PNG" class="img-responsive" alt="" height="450" width="450" vspace="20">
+                     </p>
+                </div>
+            </div>
+
+             <div class="row">
+                   <div class="col-lg-6 col-md-6" style = "border-top: 1px solid #ccc;">
+                   <h3>Results</h3>
+                     <p>
+                        Variances between sets, as shown by the F-Tests above, are significantly different for every pair except for the Audio-Techinca - Skullcandy pair and the V-Moda - Beats pair.  
+                        There appears to be a trend of increasing frequency response at 100 Hz, 900 Hz, 5000 Hz, and 8000 Hz and decreasing frequency response at 400 Hz, 1000-4000 Hz, and 6000-7500 Hz.
+                        Only frequency data from the Audio-Technicas appears to be normally distributed. 
+                        The Sample, Column, and Interaction P-values yielded are all significantly less than the significance value of a=0.05, indicating that the frequency responses for each headphone  are significantly different, even at specific frequencies.
+                     </p>
+                    </div>
+                <div class="col-lg-6 col-md-6 " style = "border-top: 1px solid #ccc; padding-top:50px;">
+                    <img src="img/mechanical/measData.png" class="img-responsive" alt="" height="400" width="400" vspace="20">
+                </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Microsystems Integration: Smart Golf Ball</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+                The smart golf ball would bring aspects to ones golf game to the tip of their hands eliminating many aspects of the game and giving improved player feedback. Micro-electronic components embedded in the ball would communicate
+                with a smartphone to tell the user various aspects of their game; tracking flight, spin and distance of the golf ball. Microsensors could also be used to calculate the final score. An embedded RF chip would the final location. Finlly, a bluetooth module could be used to send the data to the smartphone.
+
+        The smart golf ball will be embedded with micro-electronic components that integrates aspects of the game
+        of golf into the palm of one’s hand. A smart phone will be able to communicate with the golf ball to tell the player
+        statistics about their game and help them track where their golf ball landed. The smart golf ball would allow for the game
+        of golf to become automated allowing for faster play, reducing number of penalty strokes and helping the golfer improve
+        their game. 
+
+        My design consisted of embedding the golf ball with 
+        In order for the golf ball to incorporate all of these aspects the golf balls core must be embedded with a variety of components. These components include a sensor module, power supply, bluetooth chip, and RFID chip. To reduce the overall size these devices would need to be 3D packaged together (shown below).
+
+        <img src="img/mechanical/micro.PNG" class="img-responsive" alt="" height="400" width="400" vspace="20">
+        
+        <p> Click <a href="img/mechanical/MSreport.pdf" target="_blank">here</a>  for a full report of my project.</p>
+        </div>
+      </div>
+    </div>
+    
+
+        <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Freshman Projects: Owen's Backpack</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+
+            <div class="row">
+                   <div class="col-lg-4 col-md-6" >
+                     <p>
+                        Owen Weekly is a young boy of two and a half years. He has a pediatric interstitial lung disease that causes him to need supplemental oxygen while sleeping and most times when he is awake. Owen’s parents, want to take Owen hiking and skiing to experience those sports loved by Coloradans. However, Owen’s tank is heavy and cumbersome, requiring that his parents carry the tank with a long hose extension. 
+
+                        The design objective was to create something portable that would keep Owen safe while stabilizing the tank and distributing the weight around Owen’s hips, keeping him more stable and less likely to get hurt. The secondary objectives were to make the system comfortable, durable and user-friendly. 
+
+                        The critical part of the design was making a frame that holds the oxygen tank. The designed frame distributes the weight of the oxygen tank properly to prevent any back injuries and gives Owen the ability to carry the backpack.
+
+                        The first image on the right shows the machined frame holding the oxygen tank. The second image shows Owen enjoying his new backpack!
+                     </p>
+                    </div>
+                <div class="col-lg-4 col-md-6 " >
+                    <p>
+                     <img src="img/mechanical/oxyTnk.jpg" class="img-responsive" alt="" height="250" width="250">
+                     </p>
+                </div>
+            
+               <div class="col-lg-4 col-md-6">
+                     <p>
+                     <img src="img/mechanical/owen.jpg" class="img-responsive" alt="" height="250" width="250" >
+                     </p>
+                    </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+</div>
+<!-- </div>  -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
