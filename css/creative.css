@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+
 
 html,
 body {
@@ -10,7 +6,7 @@ body {
     height: 100%;
     /*padding-right: 0;*/
     /*width: auto;*/
-
+    background-color: rgba(7,140,78,.9);
 }
 
 body {
@@ -36,6 +32,7 @@ hr.light {
 }
 
 a {
+    /*list-style-type: none;*/
     color: #ff9009;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -68,23 +65,18 @@ p em{
 
 
 /*header*/
-.nospace1 img{
-   float: right;
+
+/*.head img{
+   list-style-type: none;
+   margin: -100px 0;
+}*/
+
+
+ul#menu1 li {
+    display:inline;
+     margin-left:-79px;
+
 }
-
-.nospace2 img{
-   /*font-size: 0;*/
-   /*display: block;*/
-   /*padding: 7px;*/
-   /*float: left;*/
-}
-
-.nospace3 img{
-   float: left;
-}
-
-
-
 
 /*about*/
 .bg-primary {
@@ -134,19 +126,10 @@ p em{
 
 /*projects pages*/
 .bg-projects {
-   background-color: rgba(7,140,78,.9);
    padding: 100px 0;
    margin-top: 0;
-   padding-bottom: 280px;
+
 }
-
-/*.containerP {
-    
-}*/
-/*.container-fluid {
-    padding right: 0px;
-}*/
-
 
 .bg-dark {
     color: #fff;
@@ -200,6 +183,7 @@ aside {
 
 .no-padding {
     padding: 0;
+    background-color: white;
 }
 
 
